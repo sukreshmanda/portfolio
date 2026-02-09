@@ -64,7 +64,7 @@ Keystatic organizes content into **Singletons** (single items) and **Collections
 - **Projects** - Portfolio projects with images and tech stacks
 - **Work** - Work experience timeline
 - **Education** - Academic history
-- **Hackathons** - Hackathon participation
+- **certifications** - certification participation
 
 ### Editing Content
 
@@ -88,7 +88,7 @@ src/content/
 ├── projects/*.md            # Project entries
 ├── work/*.md                # Work experience
 ├── education/*.md           # Education entries
-└── hackathons/*.md          # Hackathon entries
+└── certifications/*.md          # certification entries
 ```
 
 This means you can:
@@ -235,19 +235,19 @@ sourceLink: "https://github.com/yourusername/project"
 
 Add project images in the same directory as the markdown file.
 
-#### Hackathons
+#### certifications
 
-Create markdown files in `src/content/hackathons/`:
+Create markdown files in `src/content/certifications/`:
 
 ```markdown
 ---
-title: "Hackathon Name"
+title: "certification Name"
 location: "City, State"
 description: "What you built"
 startDate: "2023-11-23"
 endDate: "2023-11-25"
-sourceLink: "https://github.com/yourusername/hackathon-project"
-logo: "/images/hackathon-logo.png" # Optional
+sourceLink: "https://github.com/yourusername/certification-project"
+logo: "/images/certification-logo.png" # Optional
 ---
 ```
 
@@ -296,7 +296,7 @@ bloomfolio/
 │   │   ├── WorkExperience.astro
 │   │   ├── Education.astro
 │   │   ├── Projects.astro
-│   │   ├── Hackathons.astro
+│   │   ├── certifications.astro
 │   │   ├── Contact.astro
 │   │   ├── ThemeToggle.astro
 │   │   └── SkillBadge.astro
@@ -304,7 +304,7 @@ bloomfolio/
 │   │   ├── work/        # Work experience entries
 │   │   ├── education/   # Education entries
 │   │   ├── projects/    # Project entries
-│   │   ├── hackathons/  # Hackathon entries
+│   │   ├── certifications/  # certification entries
 │   │   └── blog/        # Blog posts
 │   ├── layouts/
 │   │   ├── Layout.astro      # Base layout

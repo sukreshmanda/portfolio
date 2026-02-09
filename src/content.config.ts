@@ -23,6 +23,7 @@ const hero = defineCollection({
             "YouTube",
             "Email",
             "FolderCode",
+            "Medium",
           ]),
           label: z.string(),
         })
@@ -83,16 +84,15 @@ const projects = defineCollection({
     }),
 });
 
-// Hackathons collection
-const hackathons = defineCollection({
+// certifications collection
+const certifications = defineCollection({
   loader: glob({
     pattern: "**/*.{md,mdoc,yaml}",
-    base: "./src/content/hackathons",
+    base: "./src/content/certifications",
   }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      location: z.string(),
       description: z.string(),
       startDate: z.coerce.date(),
       endDate: z.coerce.date().optional(),
@@ -156,7 +156,7 @@ const general = defineCollection({
     showBlogSection: z.boolean(),
     showWorkSection: z.boolean(),
     showEducationSection: z.boolean(),
-    showHackathonsSection: z.boolean(),
+    showcertificationsSection: z.boolean(),
     showContactSection: z.boolean(),
   }),
 });
@@ -180,7 +180,7 @@ export const collections = {
   work,
   education,
   projects,
-  hackathons,
+  certifications,
   blog,
   about,
   general,

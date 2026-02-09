@@ -1,8 +1,8 @@
 ---
-title: About Me
+title: About Mee
 photo: '@assets/about/photo.png'
-link: https://linkedin.com/in/lauroguedes
+link: https://www.linkedin.com/in/sukresh-manda/
 ---
-My toolkit revolves around the **Laravel and Vue JS** ecosystem. I enjoy crafting everything from robust APIs and full-stack applications to open-source tools like the [Mary UI Laravel Starter Kit](https://github.com/lauroguedes/mary-ui-starter-kit) and [Bloomfolio](https://github.com/lauroguedes/bloomfolio), an Astro portfolio template that's been forked dozens of times.
+I’m a software engineer who loves digging under the hood—profiling React’s scheduling, reverse-engineering **.NET** and **Java** runtimes, and tracing every weird edge case I can find. And sometimes turn my experiments into quirky technical deep dives. If it’s tricky, niche, or makes other engineers scratch their heads, I’m probably already playing with it.
 
-When I'm not coding, I'm probably exploring AI art, traveling, or listening to 🎸 heavy music way too loud.
+When I'm not coding, I'm probably watching movies/anime, playing badminton 🏸 or running 🏃‍➡️. You can checkout my photo clicking hobby too [@everything is wrong](https://www.instagram.com/wright_is_wrong)

@@ -121,7 +121,7 @@ Bloomfolio is designed as a portfolio website template with the following sectio
 - Link Demo
 - Link Source
 
-### Hackathon Section (Component + Content Loaded)
+### certification Section (Component + Content Loaded)
 - Period (e.g., Nov 23rd - 25th, 2018)
 - Title
 - Location
@@ -173,7 +173,7 @@ Bloomfolio uses **Keystatic** - a Git-based headless CMS that provides a visual 
 │  - projects/*.md            │
 │  - work/*.md                │
 │  - education/*.md           │
-│  - hackathons/*.md          │
+│  - certifications/*.md          │
 └──────────┬──────────────────┘
            │
            ├─ Validated by Astro
@@ -260,7 +260,7 @@ blog: collection({
 
 **File Formats:**
 - `.yaml` - Singletons without Markdown content (hero)
-- `.md` - Markdown content (about, work, education, projects, hackathons, simple blog posts)
+- `.md` - Markdown content (about, work, education, projects, certifications, simple blog posts)
 - `.mdoc` - Markdoc content with component support (blog posts with embeds)
 
 **Image Handling:**
@@ -550,7 +550,7 @@ Media components follow Keystatic's content component system with a three-layer 
 > - Markdoc components (Spotify, YouTube, Twitter) **only work in the blog collection** currently
 > - Files must use the **`.mdoc` extension** (not `.md`) for components to render
 > - Standard `.md` files in the blog collection will not render components
-> - Other collections (projects, hackathons, work, education) do not have components enabled
+> - Other collections (projects, certifications, work, education) do not have components enabled
 
 ### Adding New Content Components
 
@@ -598,7 +598,7 @@ To add a new Markdoc component (e.g., Instagram embed):
 
 ### Extending Components to Other Collections
 
-To enable media components in other collections (e.g., projects, hackathons):
+To enable media components in other collections (e.g., projects, certifications):
 
 1. **Update Collection Schema** in `keystatic.config.ts`:
    ```typescript

@@ -36,7 +36,7 @@ Bloomfolio combines the power of modern web technologies Astro 5.x for lightning
 - &nbsp;**Work Experience**: Showcase your professional journey with company positions and descriptions
 - &nbsp;**Education**: Display your academic background and achievements
 - &nbsp;**Projects Showcase**: Highlight your best work with images, descriptions, tech stacks, and live/source links
-- &nbsp;**Hackathon Participation**: Feature your competitive coding and innovation experiences
+- &nbsp;**certification Participation**: Feature your competitive coding and innovation experiences
 - &nbsp;**Contact Section**: Make it easy for visitors to reach you
 
 ## Perfect For

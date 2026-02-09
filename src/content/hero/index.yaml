@@ -1,33 +1,22 @@
-name: 🌻 Bloomfolio
-title: Astro Portfolio Template built with 🌼 DaisyUI
+name: 🌻 Sukresh Manda
+title: A Software Engineer and Open-Source Enthusiast
 description: >-
-  A modern, responsive, and customizable portfolio template built with Astro and
-  DaisyUI. Perfect for developers, designers, and creatives to showcase their
-  work and skills.
-avatar: '@assets/hero/avatar.png'
-location: 🇧🇷 Brazil
+  A software engineer and open-source enthusiast passionate about building modern web applications and sharing knowledge with the community with working knowledge in Java, Springboot, Dotnet Core, JavaScript, TypeScript, React and more.
+avatar: '@assets/about/photo.png'
+location: 🇮🇳 India
 socialLinks:
-  - url: mailto:hello@example.com
+  - url: mailto:mandasukresh@gmail.com
     icon: Email
     label: Email
-  - url: https://github.com/lauroguedes
+  - url: https://github.com/sukreshmanda
     icon: GitHub
     label: GitHub
-  - url: https://linkedin.com/in/lauroguedes
-    icon: LinkedIn
-    label: LinkedIn
-  - url: https://twitter.com/leowg
-    icon: Twitter
-    label: X (Twitter)
-  - url: https://bsky.app/profile/lauroguedes.bsky.social
-    icon: Bluesky
-    label: Bluesky
-  - url: https://instagram.com/lauroguedes.dev
+  - url: https://medium.com/@sukreshmanda
+    icon: Medium
+    label: Medium
+  - url: https://instagram.com/sukreshmanda
     icon: Instagram
     label: Instagram
-  - url: https://youtube.com/leowgweb
+  - url: https://www.youtube.com/@SukreshDev
     icon: YouTube
     label: YouTube
-  - url: https://codetips.cloud/u/lauroguedes
-    icon: FolderCode
-    label: CodeTips

@@ -32,6 +32,7 @@ import Twitter from "../components/icons/Twitter.astro";
 import Bluesky from "../components/icons/Bluesky.astro";
 import Instagram from "../components/icons/Instagram.astro";
 import YouTube from "../components/icons/YouTube.astro";
+import Medium from "../components/icons/Medium.astro";
 
 export type IconName =
   | "Flower2"
@@ -64,6 +65,7 @@ export type IconName =
   | "Bluesky"
   | "Instagram"
   | "YouTube"
+  | "Medium"
   | "Email";
 
 export const iconMap: Record<IconName, any> = {
@@ -97,6 +99,7 @@ export const iconMap: Record<IconName, any> = {
   Bluesky,
   Instagram,
   YouTube,
+  Medium,
   Email: Mail,
 };
 

@@ -1,10 +1,10 @@
 ---
 import { getCollection } from "astro:content";
 
-const hackathonEntries = await getCollection("hackathons");
+const certificationEntries = await getCollection("certifications");
 
 // Sort by start date, most recent first
-const sortedHackathons = hackathonEntries.sort(
+const sortedcertifications = certificationEntries.sort(
   (a, b) => b.data.startDate.getTime() - a.data.startDate.getTime()
 );
 
@@ -21,34 +21,31 @@ function formatPeriod(startDate: Date, endDate?: Date) {
     return `${start} - ${end}`;
   }
 
-  return start;
+  return `${start} - present`;
 }
 ---
 
-<section id="hackathons" class="py-20 px-4">
+<section id="certifications" class="py-20 px-4">
   <div class="max-w-4xl mx-auto">
     <div class="text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4">I like building things</h2>
+      <h2 class="text-4xl font-bold mb-4">Cloud Certifications</h2>
       <p class="text-lg text-base-content/70">
-        During my time in university, I attended multiple hackathons. People
-        from around the country would come together and build incredible things
-        in 2-3 days. It was eye-opening to see the endless possibilities brought
-        to life by a group of motivated and passionate individuals.
+        I'm committed to staying current with cloud technologies and best practices. These certifications demonstrate my expertise in designing, deploying, and managing cloud infrastructure across major platforms. Each certification represents hands-on knowledge and validation of my ability to build scalable, secure, and efficient cloud solutions.
       </p>
     </div>
 
     <div class="space-y-6">
       {
-        sortedHackathons.map((hackathon) => (
+        sortedcertifications.map((certification) => (
           <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
             <div class="card-body">
               <div class="flex items-start gap-4">
-                {hackathon.data.logo && (
+                {certification.data.logo && (
                   <div class="avatar flex-shrink-0">
                     <div class="w-16 h-16 rounded">
                       <img
-                        src={hackathon.data.logo}
-                        alt={hackathon.data.title}
+                        src={certification.data.logo}
+                        alt={certification.data.title}
                       />
                     </div>
                   </div>
@@ -56,26 +53,23 @@ function formatPeriod(startDate: Date, endDate?: Date) {
                 <div class="flex-1">
                   <time class="text-sm text-base-content/60">
                     {formatPeriod(
-                      hackathon.data.startDate,
-                      hackathon.data.endDate
+                      certification.data.startDate,
+                      certification.data.endDate
                     )}
                   </time>
-                  <h3 class="card-title mt-1">{hackathon.data.title}</h3>
-                  <p class="text-sm text-primary font-semibold">
-                    {hackathon.data.location}
-                  </p>
+                  <h3 class="card-title mt-1">{certification.data.title}</h3>
                   <p class="text-base-content/80 mt-3">
-                    {hackathon.data.description}
+                    {certification.data.description}
                   </p>
-                  {hackathon.data.sourceLink && (
+                  {certification.data.sourceLink && (
                     <div class="card-actions mt-4">
                       <a
-                        href={hackathon.data.sourceLink}
+                        href={certification.data.sourceLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn btn-sm btn-outline btn-primary"
                       >
-                        View Project
+                        View Certification
                       </a>
                     </div>
                   )}

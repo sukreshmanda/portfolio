@@ -19,7 +19,7 @@ A modern, customizable portfolio template built with **Astro 5** and **DaisyUI 5
 ## ✨ Features
 
 - 🎨 **6 Built-in Themes** - Light, Dark, Synthwave, Retro, Valentine, and Dim
-- 📝 **6 Content Collections** - Blog, Projects, Work, Education, Hackathons, and About
+- 📝 **6 Content Collections** - Blog, Projects, Work, Education, certifications, and About
 - 🎨 **Keystatic CMS** - Visual content editor with live preview and GitHub integration
 - 🔒 **Type-Safe Content** - Full TypeScript support with validated schemas
 - 📱 **Fully Responsive** - Mobile-first design with DaisyUI components
@@ -94,7 +94,7 @@ Control which sections appear on your homepage through **General Settings** in K
 - Blog posts (shows 3 most recent)
 - Work experience timeline
 - Education history
-- Hackathon participation
+- certification participation
 - Contact section
 
 The Hero section is always visible.
@@ -142,7 +142,7 @@ bloomfolio/
 │   │   ├── Contact.astro
 │   │   ├── Dock.astro        # Mobile bottom navigation
 │   │   ├── FabFlower.astro   # Desktop floating action button
-│   │   ├── Hackathons.astro
+│   │   ├── certifications.astro
 │   │   ├── Hero.astro
 │   │   ├── ProjectCard.astro
 │   │   ├── Projects.astro
@@ -157,7 +157,7 @@ bloomfolio/
 │   │   ├── about/     # About section (1 file)
 │   │   ├── blog/      # Blog posts (.md or .mdx)
 │   │   ├── education/ # Education history
-│   │   ├── hackathons/# Hackathon entries
+│   │   ├── certifications/# certification entries
 │   │   ├── projects/  # Portfolio projects
 │   │   └── work/      # Work experience
 │   ├── layouts/       # Page layouts
@@ -225,7 +225,7 @@ Keystatic is a **Git-based CMS** that:
 - **Projects** - Portfolio items with screenshots, descriptions, and tech stacks
 - **Work Experience** - Timeline of employment history
 - **Education** - Academic background
-- **Hackathons** - Competitive coding events and achievements
+- **certifications** - Competitive coding events and achievements
 
 #### Using the Keystatic Editor
 
@@ -364,22 +364,22 @@ link: "https://institution.edu"  # Optional
 Educational details and achievements...
 ```
 
-#### Hackathons
+#### certifications
 
-Create a new file in `src/content/hackathons/`:
+Create a new file in `src/content/certifications/`:
 
 ```markdown
 ---
-title: "Hackathon Name"
+title: "certification Name"
 location: "City, State or Virtual"
-description: "Brief hackathon summary"
+description: "Brief certification summary"
 startDate: "2023-11-23"
 endDate: "2023-11-25"  # Optional
-logo: "https://hackathon-logo-url.com"  # Optional
+logo: "https://certification-logo-url.com"  # Optional
 sourceLink: "https://github.com/..."  # Optional
 ---
 
-Detailed information about the hackathon and your project...
+Detailed information about the certification and your project...
 ```
 
 #### Singletons (Hero & About)

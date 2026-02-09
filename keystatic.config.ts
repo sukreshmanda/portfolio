@@ -190,8 +190,8 @@ export default config({
           label: "Show Education Section",
           defaultValue: true,
         }),
-        showHackathonsSection: fields.checkbox({
-          label: "Show Hackathons Section",
+        showcertificationsSection: fields.checkbox({
+          label: "Show certifications Section",
           defaultValue: true,
         }),
         showContactSection: fields.checkbox({
@@ -516,16 +516,16 @@ export default config({
       },
     }),
 
-    hackathons: collection({
-      label: "Hackathons",
-      path: "src/content/hackathons/*",
+    certifications: collection({
+      label: "certifications",
+      path: "src/content/certifications/*",
       slugField: "title",
       format: {
         contentField: "content",
       },
       schema: {
         title: fields.slug({
-          name: { label: "Hackathon Name" },
+          name: { label: "certification Name" },
         }),
         location: fields.text({
           label: "Location",
@@ -534,7 +534,7 @@ export default config({
         description: fields.text({
           label: "Description",
           multiline: true,
-          description: "Brief hackathon summary",
+          description: "Brief certification summary",
         }),
         startDate: fields.date({
           label: "Start Date",
@@ -546,8 +546,8 @@ export default config({
         }),
         logo: fields.image({
           label: "Event Logo",
-          directory: "src/assets/hackathons",
-          publicPath: "@assets/hackathons/",
+          directory: "src/assets/certifications",
+          publicPath: "@assets/certifications/",
           description: "Optional event logo",
         }),
         sourceLink: fields.url({
@@ -556,7 +556,7 @@ export default config({
         }),
         content: fields.markdoc({
           label: "Full Description",
-          description: "Detailed information about the hackathon and project",
+          description: "Detailed information about the certification and project",
           extension: "md",
         }),
       },
