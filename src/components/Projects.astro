@@ -3,6 +3,9 @@ import { getCollection } from "astro:content";
 import ProjectCard from "./ProjectCard.astro";
 
 const projectEntries = await getCollection("projects");
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 
 // Filter featured projects, sort by start date (most recent first), limit to 3
 const featuredProjects = projectEntries
@@ -38,7 +41,7 @@ const featuredProjects = projectEntries
     }
 
     <div class="text-center mt-10">
-      <a href="/projects" class="btn btn-primary btn-outline">
+      <a href={`${baseUrl}projects`} class="btn btn-primary btn-outline">
         View All Projects
       </a>
     </div>

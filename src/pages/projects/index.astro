@@ -4,6 +4,9 @@ import { getCollection } from "astro:content";
 import ProjectCard from "../../components/ProjectCard.astro";
 
 const projects = await getCollection("projects");
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
 
 // Sort by start date, most recent first
 const sortedProjects = projects.sort(
@@ -27,7 +30,7 @@ const sortedProjects = projects.sort(
 
     <!-- Back to Home -->
     <div class="mb-8">
-      <a href="/" class="btn btn-ghost btn-sm">
+      <a href={baseUrl} class="btn btn-ghost btn-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
