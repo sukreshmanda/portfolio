@@ -5,6 +5,8 @@ import { Image } from "astro:assets";
 import SkillBadge from "../../components/SkillBadge.astro";
 
 const blogPosts = await getCollection("blog");
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (url: string) => (url.startsWith("/") ? `${baseUrl}${url.slice(1)}` : url);
 
 // Sort by publish date, most recent first
 const sortedPosts = blogPosts.sort(
@@ -79,7 +81,7 @@ function formatDate(date: Date) {
                   {formatDate(post.data.publishDate)}
                 </time>
                 <h2 class="card-title hover:text-primary transition-colors">
-                  <a href={`/blog/${post.id}`}>{post.data.title}</a>
+                  <a href={withBase(`/blog/${post.id}`)}>{post.data.title}</a>
                 </h2>
                 <p class="text-base-content/80">{post.data.description}</p>
                 {post.data.tags && post.data.tags.length > 0 && (
@@ -90,7 +92,7 @@ function formatDate(date: Date) {
                   </div>
                 )}
                 <div class="card-actions justify-end mt-4">
-                  <a href={`/blog/${post.id}`} class="btn btn-primary btn-sm">
+                  <a href={withBase(`/blog/${post.id}`)} class="btn btn-primary btn-sm">
                     Read More
                   </a>
                 </div>

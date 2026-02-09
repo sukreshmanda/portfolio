@@ -48,7 +48,7 @@ if (error instanceof Error) {
 
       <!-- Action Buttons -->
       <div class="flex gap-4 justify-center flex-wrap mt-8">
-        <a href="/" class="btn btn-primary gap-2">
+        <a href={baseUrl} class="btn btn-primary gap-2">
           <House class="size-5" />
           Go Home
         </a>
@@ -70,12 +70,9 @@ if (error instanceof Error) {
       <div class="mt-8">
         <p class="text-sm text-base-content/60 mb-4">Need help?</p>
         <div class="flex gap-3 justify-center flex-wrap text-sm">
-          <a href="/#contact" class="link link-hover">Contact</a>
+          <a href={`${baseUrl}#contact`} class="link link-hover">Contact</a>
           <span class="text-base-content/30">•</span>
-          <a
-            href={`${baseUrl}blog/guides/bloomfolio-complete-guide`}
-            class="link link-hover">Documentation</a
-          >
+          <a href={`${baseUrl}blog/guides/bloomfolio-complete-guide`} class="link link-hover">Documentation</a>
           <span class="text-base-content/30">•</span>
           <a
             href="https://github.com/lauroguedes/bloomfolio/issues"

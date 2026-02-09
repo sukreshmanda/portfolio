@@ -12,6 +12,8 @@ interface Props {
 }
 
 const { extraLinks } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (url: string) => (url.startsWith("/") ? `${baseUrl}${url.slice(1)}` : url);
 ---
 
 <div class="fab fab-flower hidden lg:grid">
@@ -33,7 +35,7 @@ const { extraLinks } = Astro.props;
       const IconComponent = getIcon(link.icon as any);
       return (
         <div class="tooltip tooltip-left" data-tip={link.label}>
-          <a href={link.link} class="btn btn-lg btn-circle">
+          <a href={withBase(link.link)} class="btn btn-lg btn-circle">
             <IconComponent class="size-5" />
           </a>
         </div>
