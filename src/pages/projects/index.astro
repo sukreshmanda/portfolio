@@ -2,11 +2,10 @@
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import ProjectCard from "../../components/ProjectCard.astro";
+import { getBaseUrl } from "../../utils/url";
 
 const projects = await getCollection("projects");
-const baseUrl = import.meta.env.BASE_URL.endsWith("/")
-  ? import.meta.env.BASE_URL
-  : `${import.meta.env.BASE_URL}/`;
+const baseUrl = getBaseUrl();
 
 // Sort by start date, most recent first
 const sortedProjects = projects.sort(

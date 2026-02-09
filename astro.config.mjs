@@ -10,8 +10,8 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sukreshmanda.github.io",
-  base: "/portfolio",
+  site: "https://sukresh.dev",
+  base: "/",
   
   integrations: [react(), markdoc(), keystatic()],
 
